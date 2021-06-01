@@ -14,6 +14,7 @@ int main(int argc, char **argv) {
   // 沿Z轴转90度的旋转矩阵
   Matrix3d R = AngleAxisd(M_PI / 2, Vector3d(0, 0, 1)).toRotationMatrix();
   // 或者四元数
+  cout << "旋转矩阵：\n"<< R.matrix()<< endl;
   Quaterniond q(R);
   Sophus::SO3d SO3_R(R);              // Sophus::SO3d可以直接从旋转矩阵构造
   Sophus::SO3d SO3_q(q);              // 也可以通过四元数构造

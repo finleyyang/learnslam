@@ -26,7 +26,8 @@ void pose_estimation_2d2d(
 
 // 像素坐标转相机归一化坐标
 Point2d pixel2cam(const Point2d &p, const Mat &K);
-
+// u = fx(X/Z) + cx
+// v = fy(Y/Z) + cy
 int main(int argc, char **argv) {
   if (argc != 3) {
     cout << "usage: pose_estimation_2d2d img1 img2" << endl;

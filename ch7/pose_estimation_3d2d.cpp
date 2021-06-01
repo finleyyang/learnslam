@@ -66,13 +66,31 @@ int main(int argc, char **argv) {
   vector<Point3f> pts_3d;
   vector<Point2f> pts_2d;
   for (DMatch m:matches) {
+      // u = fx(X/Z) + cx
+      // v = fy(Y/Z) + cy
     ushort d = d1.ptr<unsigned short>(int(keypoints_1[m.queryIdx].pt.y))[int(keypoints_1[m.queryIdx].pt.x)];
+    /*
+     *  查找特征点的深度
+     *
+     */
     if (d == 0)   // bad depth
       continue;
     float dd = d / 5000.0;
+    /*
+     * 暂时不知道原因，为啥除以5000
+     * dd为[X/Z, Y/Z, 1]中的Z；
+     * [X/Z, Y/Z, 1]为归一化坐标；
+     * [X, Y, Z]为实际坐标；
+     */
     Point2d p1 = pixel2cam(keypoints_1[m.queryIdx].pt, K);
+    //归一化坐标
     pts_3d.push_back(Point3f(p1.x * dd, p1.y * dd, dd));
+    //实际坐标
     pts_2d.push_back(keypoints_2[m.trainIdx].pt);
+    /*
+     * queryIdx 为3d点的序列号
+     * trainIdx 为2d点的序列号
+     */
   }
 
   cout << "3d-2d pairs: " << pts_3d.size() << endl;

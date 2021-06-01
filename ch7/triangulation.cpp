@@ -164,12 +164,13 @@ void triangulation(
     1, 0, 0, 0,
     0, 1, 0, 0,
     0, 0, 1, 0);
+  //第一个相机的位姿
   Mat T2 = (Mat_<float>(3, 4) <<
     R.at<double>(0, 0), R.at<double>(0, 1), R.at<double>(0, 2), t.at<double>(0, 0),
     R.at<double>(1, 0), R.at<double>(1, 1), R.at<double>(1, 2), t.at<double>(1, 0),
     R.at<double>(2, 0), R.at<double>(2, 1), R.at<double>(2, 2), t.at<double>(2, 0)
   );
-
+  //第二个相机的位姿T1×R
   Mat K = (Mat_<double>(3, 3) << 520.9, 0, 325.1, 0, 521.0, 249.7, 0, 0, 1);
   vector<Point2f> pts_1, pts_2;
   for (DMatch m:matches) {

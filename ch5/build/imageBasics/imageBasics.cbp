@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="imageBasics"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\imageBasics\;CMake Files\stereo\;CMake Files\rgbd\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="undistortImage">
+				<Option output="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/undistortImage" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 undistortImage"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="undistortImage/fast">
+				<Option output="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/undistortImage" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 undistortImage/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imageBasics">
+				<Option output="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/imageBasics" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 imageBasics"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imageBasics/fast">
+				<Option output="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/imageBasics" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 imageBasics/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch5/build/imageBasics/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/imageBasics/imageBasics.cpp">
+			<Option target="imageBasics"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/imageBasics/undistortImage.cpp">
+			<Option target="undistortImage"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/Pangolin/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/../../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/imageBasics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\imageBasics\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/stereo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stereo\"/>
+		</Unit>
+		<Unit filename="/home/finley/Desktop/XX/learnslam/ch5/rgbd/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rgbd\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
