@@ -97,7 +97,7 @@ int main(int argc, char **argv) {
 
   chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
   Mat r, t;
-  solvePnP(pts_3d, pts_2d, K, Mat(), r, t, false); // 调用OpenCV 的 PnP 求解，可选择EPNP，DLS等方法
+  solvePnP(pts_3d, pts_2d, K, Mat(), r, t, false, SOLVEPNP_EPNP); // 调用OpenCV 的 PnP 求解，可选择EPNP，DLS等方法
   Mat R;
   cv::Rodrigues(r, R); // r为旋转向量形式，用Rodrigues公式转换为矩阵
   chrono::steady_clock::time_point t2 = chrono::steady_clock::now();
@@ -210,8 +210,10 @@ void bundleAdjustmentGaussNewton(
       Eigen::Vector3d pc = pose * points_3d[i];
       double inv_z = 1.0 / pc[2];
       double inv_z2 = inv_z * inv_z;
-      Eigen::Vector2d proj(fx * pc[0] / pc[2] + cx, fy * pc[1] / pc[2] + cy);
 
+      //3D点转换到2D平面上
+      Eigen::Vector2d proj(fx * pc[0] / pc[2] + cx, fy * pc[1] / pc[2] + cy);
+      //转换后的2D点与另外一张照片的2D点的误差
       Eigen::Vector2d e = points_2d[i] - proj;
 
       cost += e.squaredNorm();
@@ -230,10 +232,16 @@ void bundleAdjustmentGaussNewton(
         -fy * pc[0] * inv_z;
 
       H += J.transpose() * J;
+
+      //需构建函数J(x)J(x)dx = -J(x)f(x)
+      //求解dx
+      //海塞矩阵近似等于雅克比矩阵乘以雅克比矩阵
       b += -J.transpose() * e;
+      //右侧雅克比矩阵乘以函数
     }
 
     Vector6d dx;
+    // 求解线性方程 Hx=b
     dx = H.ldlt().solve(b);
 
     if (isnan(dx[0])) {
@@ -252,7 +260,7 @@ void bundleAdjustmentGaussNewton(
     lastCost = cost;
 
     cout << "iteration " << iter << " cost=" << std::setprecision(12) << cost << endl;
-    if (dx.norm() < 1e-6) {
+    if (dx.norm() < 1e-10) {
       // converge
       break;
     }
@@ -293,13 +301,16 @@ public:
     Sophus::SE3d T = v->estimate();
     Eigen::Vector3d pos_pixel = _K * (T * _pos3d);
     pos_pixel /= pos_pixel[2];
+    //归一化坐标[X, Y, Z]->[X/Z, Y/Z, 1]
     _error = _measurement - pos_pixel.head<2>();
+    //提取像素的前两维既 归一化坐标前两维，既u，v
   }
 
   virtual void linearizeOplus() override {
     const VertexPose *v = static_cast<VertexPose *> (_vertices[0]);
     Sophus::SE3d T = v->estimate();
     Eigen::Vector3d pos_cam = T * _pos3d;
+    //这里乘以T的原因是给一个非常小的变化
     double fx = _K(0, 0);
     double fy = _K(1, 1);
     double cx = _K(0, 2);

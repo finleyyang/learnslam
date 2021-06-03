@@ -77,6 +77,7 @@ public:
     VertexPose *pose = static_cast<VertexPose *>(_vertices[0]);
     Sophus::SE3d T = pose->estimate();
     Eigen::Vector3d xyz_trans = T * _point;
+    //这里乘以T的原因是给一个非常小的变化
     _jacobianOplusXi.block<3, 3>(0, 0) = -Eigen::Matrix3d::Identity();
     _jacobianOplusXi.block<3, 3>(0, 3) = Sophus::SO3d::hat(xyz_trans);
   }
@@ -209,6 +210,7 @@ void pose_estimation_3d3d(const vector<Point3f> &pts1,
     p1 += pts1[i];
     p2 += pts2[i];
   }
+  //
   p1 = Point3f(Vec3f(p1) / N);
   p2 = Point3f(Vec3f(p2) / N);
   vector<Point3f> q1(N), q2(N); // remove the center
