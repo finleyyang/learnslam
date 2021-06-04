@@ -372,6 +372,11 @@ void bundleAdjustmentG2O(
     edge->setVertex(0, vertex_pose);
     edge->setMeasurement(p2d);
     edge->setInformation(Eigen::Matrix2d::Identity());
+    //每条边设定一个信息矩阵（协方差矩阵之逆），作为不确定性的度量：
+    // 信息矩阵 Ω 是协方差矩阵的逆，是一个对称矩阵。它的每个元素可以看成我们对ei,ej这个误差项相关性的一个预计。
+    // 最简单的是把Ω设成对角矩阵，对角阵元素的大小表明我们对此项误差的重视程度。
+    // 例如：你觉得帧间匹配精度在0.1m，那么把信息矩阵设成100的对角阵即可。
+
     optimizer.addEdge(edge);
     index++;
   }

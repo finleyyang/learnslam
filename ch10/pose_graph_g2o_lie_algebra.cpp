@@ -86,6 +86,11 @@ public:
         Quaterniond q(data[6], data[3], data[4], data[5]);
         q.normalize();
         setMeasurement(SE3d(q, Vector3d(data[0], data[1], data[2])));
+        // 每条边设定一个信息矩阵（协方差矩阵之逆），作为不确定性的度量：
+        // 信息矩阵 Ω 是协方差矩阵的逆，是一个对称矩阵。它的每个元素可以看成我们对ei,ej这个误差项相关性的一个预计。
+        // 最简单的是把Ω设成对角矩阵，对角阵元素的大小表明我们对此项误差的重视程度。
+        // 例如：你觉得帧间匹配精度在0.1m，那么把信息矩阵设成100的对角阵即可。
+        // 因为pose为6D的，信息矩阵是6*6的阵，假设位置和角度的估计精度均为0.01且互相独立；那么协方差则为对角为0.00001的矩阵，信息阵则为10000的矩阵
         for (int i = 0; i < information().rows() && is.good(); i++)
             for (int j = i; j < information().cols() && is.good(); j++) {
                 is >> information()(i, j);
