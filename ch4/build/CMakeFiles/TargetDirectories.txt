@@ -1,6 +1,6 @@
-/home/finley/Desktop/XX/learnslam/ch4/build/CMakeFiles/rebuild_cache.dir
-/home/finley/Desktop/XX/learnslam/ch4/build/CMakeFiles/edit_cache.dir
-/home/finley/Desktop/XX/learnslam/ch4/build/CMakeFiles/useSophus.dir
-/home/finley/Desktop/XX/learnslam/ch4/build/example/CMakeFiles/rebuild_cache.dir
-/home/finley/Desktop/XX/learnslam/ch4/build/example/CMakeFiles/edit_cache.dir
-/home/finley/Desktop/XX/learnslam/ch4/build/example/CMakeFiles/trajectoryError.dir
+/home/finley/CODE/learnslam/ch4/build/CMakeFiles/rebuild_cache.dir
+/home/finley/CODE/learnslam/ch4/build/CMakeFiles/edit_cache.dir
+/home/finley/CODE/learnslam/ch4/build/CMakeFiles/useSophus.dir
+/home/finley/CODE/learnslam/ch4/build/example/CMakeFiles/rebuild_cache.dir
+/home/finley/CODE/learnslam/ch4/build/example/CMakeFiles/edit_cache.dir
+/home/finley/CODE/learnslam/ch4/build/example/CMakeFiles/trajectoryError.dir

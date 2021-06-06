@@ -16,6 +16,11 @@ typedef Eigen::Map<const Eigen::VectorXd> ConstVectorRef;
 template<typename T>
 void FscanfOrDie(FILE *fptr, const char *format, T *value) {
     int num_scanned = fscanf(fptr, format, value);
+    /*fscanf（fptr， format， value）
+     *fptr：这是指向 FILE 对象的指针，该 FILE 对象标识了流
+     *format：这是 C 字符串，包含了以下各项中的一个或多个：空格字符、非空格字符 和 format 说明符
+     *value：如果读取的内容，与format设置的格式一致，则把读取的数值赋值给value，并返回赋值的个数
+     */
     if (num_scanned != 1)
         std::cerr << "Invalid UW data file. ";
 }
@@ -42,22 +47,31 @@ BALProblem::BALProblem(const std::string &filename, bool use_quaternions) {
 
     // This wil die horribly on invalid files. Them's the breaks.
     FscanfOrDie(fptr, "%d", &num_cameras_);
+    //读取相机位置的个数，这里是16个相机位置
     FscanfOrDie(fptr, "%d", &num_points_);
+    //读取数据点的数据，这里一共由22106个数据
     FscanfOrDie(fptr, "%d", &num_observations_);
+    //读取数据点和相机的数据，一共由83718个数据
+    //这里一个相机的位置可以观察到过个数据点
+    //一个数据点可以被多个相机观察到
 
     std::cout << "Header: " << num_cameras_
               << " " << num_points_
               << " " << num_observations_;
 
     point_index_ = new int[num_observations_];
+    //申请一个动态整型数组，数组的长度为[]中的值
     camera_index_ = new int[num_observations_];
     observations_ = new double[2 * num_observations_];
-
+    //观察数据是在图片上的所以是一个二位观测点
     num_parameters_ = 9 * num_cameras_ + 3 * num_points_;
+    //一个相机位置有九个维度的参数，旋转矩阵3维，平移向量3维，f焦距1维，k1，k2畸变参数2维，一共9维
+    //观测点空间内有3维误差
     parameters_ = new double[num_parameters_];
 
     for (int i = 0; i < num_observations_; ++i) {
         FscanfOrDie(fptr, "%d", camera_index_ + i);
+        //std::cout<<*(camera_index_+i)<<std::endl;
         FscanfOrDie(fptr, "%d", point_index_ + i);
         for (int j = 0; j < 2; ++j) {
             FscanfOrDie(fptr, "%lf", observations_ + 2 * i + j);
@@ -71,9 +85,12 @@ BALProblem::BALProblem(const std::string &filename, bool use_quaternions) {
     fclose(fptr);
 
     use_quaternions_ = use_quaternions;
+//    std::cout<<std::endl;
+//    std::cout<<use_quaternions<<std::endl;
     if (use_quaternions) {
         // Switch the angle-axis rotations to quaternions.
         num_parameters_ = 10 * num_cameras_ + 3 * num_points_;
+        //std::cout<<"test1"<<std::endl;
         double *quaternion_parameters = new double[num_parameters_];
         double *original_cursor = parameters_;
         double *quaternion_cursor = quaternion_parameters;
@@ -210,8 +227,11 @@ void BALProblem::AngleAxisAndCenterToCamera(const double *angle_axis,
 
 void BALProblem::Normalize() {
     // Compute the marginal median of the geometry
+    // 计算几何图形的边缘中值
     std::vector<double> tmp(num_points_);
     Eigen::Vector3d median;
+    //    std::cout<<std::endl;
+    //    std::cout<<camera_block_size()<<std::endl;
     double *points = mutable_points();
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < num_points_; ++j) {

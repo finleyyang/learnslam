@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/finley/Desktop/XX/learnslam/ch9/bundle_adjustment_g2o.cpp" "/home/finley/Desktop/XX/learnslam/ch9/build/CMakeFiles/bundle_adjustment_g2o.dir/bundle_adjustment_g2o.cpp.o"
+  "/home/finley/CODE/learnslam/ch9/bundle_adjustment_g2o.cpp" "/home/finley/CODE/learnslam/ch9/build/CMakeFiles/bundle_adjustment_g2o.dir/bundle_adjustment_g2o.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/finley/Desktop/XX/learnslam/ch9/build/CMakeFiles/bal_common.dir/DependInfo.cmake"
+  "/home/finley/CODE/learnslam/ch9/build/CMakeFiles/bal_common.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

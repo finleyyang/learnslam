@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/finley/Desktop/XX/learnslam/ch9/SnavelyReprojectionError.h
+/home/finley/CODE/learnslam/ch9/SnavelyReprojectionError.h
 iostream
 -
 ceres/ceres.h
-/home/finley/Desktop/XX/learnslam/ch9/ceres/ceres.h
+/home/finley/CODE/learnslam/ch9/ceres/ceres.h
 rotation.h
-/home/finley/Desktop/XX/learnslam/ch9/rotation.h
+/home/finley/CODE/learnslam/ch9/rotation.h
 
-/home/finley/Desktop/XX/learnslam/ch9/bundle_adjustment_ceres.cpp
+/home/finley/CODE/learnslam/ch9/bundle_adjustment_ceres.cpp
 iostream
 -
 ceres/ceres.h
 -
 common.h
-/home/finley/Desktop/XX/learnslam/ch9/common.h
+/home/finley/CODE/learnslam/ch9/common.h
 SnavelyReprojectionError.h
-/home/finley/Desktop/XX/learnslam/ch9/SnavelyReprojectionError.h
+/home/finley/CODE/learnslam/ch9/SnavelyReprojectionError.h
 
-/home/finley/Desktop/XX/learnslam/ch9/common.h
+/home/finley/CODE/learnslam/ch9/common.h
 
-/home/finley/Desktop/XX/learnslam/ch9/rotation.h
+/home/finley/CODE/learnslam/ch9/rotation.h
 algorithm
 -
 cmath

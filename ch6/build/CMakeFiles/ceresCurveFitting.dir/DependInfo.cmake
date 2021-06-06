@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/finley/Desktop/XX/learnslam/ch6/ceresCurveFitting.cpp" "/home/finley/Desktop/XX/learnslam/ch6/build/CMakeFiles/ceresCurveFitting.dir/ceresCurveFitting.cpp.o"
+  "/home/finley/CODE/learnslam/ch6/ceresCurveFitting.cpp" "/home/finley/CODE/learnslam/ch6/build/CMakeFiles/ceresCurveFitting.dir/ceresCurveFitting.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "GOOGLE_GLOG_DLL_DECL="
+  "CERES_EXPORT_INTERNAL_SYMBOLS"
   )
 
 # The include file search paths:

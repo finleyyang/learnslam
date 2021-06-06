@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/finley/Desktop/XX/learnslam/ch6/gaussNewton.cpp
+/home/finley/CODE/learnslam/ch6/gaussNewton.cpp
 iostream
 -
 chrono
@@ -21,12 +21,16 @@ Eigen/Dense
 /usr/include/eigen3/Eigen/Cholesky
 Core
 /usr/include/eigen3/Eigen/Core
+Jacobi
+/usr/include/eigen3/Eigen/Jacobi
 src/Core/util/DisableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
 src/Cholesky/LLT.h
 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
 src/Cholesky/LDLT.h
 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
+mkl_lapacke.h
+/usr/include/eigen3/Eigen/mkl_lapacke.h
 src/misc/lapacke.h
 /usr/include/eigen3/Eigen/src/misc/lapacke.h
 src/Cholesky/LLT_LAPACKE.h
@@ -37,7 +41,7 @@ src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-math_functions.hpp
+cuda_runtime.h
 -
 new
 -
@@ -157,6 +161,8 @@ src/Core/arch/AVX/Complex.h
 /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
 src/Core/arch/AVX/TypeCasting.h
 /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
+src/Core/arch/SSE/TypeCasting.h
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
 src/Core/arch/SSE/PacketMath.h
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
 src/Core/arch/SSE/MathFunctions.h
@@ -435,6 +441,8 @@ src/Eigenvalues/GeneralizedEigenSolver.h
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
 src/Eigenvalues/MatrixBaseEigenvalues.h
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+mkl_lapacke.h
+/usr/include/eigen3/Eigen/mkl_lapacke.h
 src/misc/lapacke.h
 /usr/include/eigen3/Eigen/src/misc/lapacke.h
 src/Eigenvalues/RealSchur_LAPACKE.h
@@ -527,6 +535,8 @@ src/LU/FullPivLU.h
 /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
 src/LU/PartialPivLU.h
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
+mkl_lapacke.h
+/usr/include/eigen3/Eigen/mkl_lapacke.h
 src/misc/lapacke.h
 /usr/include/eigen3/Eigen/src/misc/lapacke.h
 src/LU/PartialPivLU_LAPACKE.h
@@ -559,6 +569,8 @@ src/QR/ColPivHouseholderQR.h
 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
 src/QR/CompleteOrthogonalDecomposition.h
 /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+mkl_lapacke.h
+/usr/include/eigen3/Eigen/mkl_lapacke.h
 src/misc/lapacke.h
 /usr/include/eigen3/Eigen/src/misc/lapacke.h
 src/QR/HouseholderQR_LAPACKE.h
@@ -587,6 +599,8 @@ src/SVD/JacobiSVD.h
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
 src/SVD/BDCSVD.h
 /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
+mkl_lapacke.h
+/usr/include/eigen3/Eigen/mkl_lapacke.h
 src/misc/lapacke.h
 /usr/include/eigen3/Eigen/src/misc/lapacke.h
 src/SVD/JacobiSVD_LAPACKE.h
@@ -1061,8 +1075,6 @@ opencv2/core/affine.hpp
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/opencv2/core/cvdef.h
-opencv2/core/version.hpp
-/usr/local/include/opencv4/opencv2/opencv2/core/version.hpp
 opencv2/core/base.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core/base.hpp
 opencv2/core/cvstd.hpp
@@ -1181,6 +1193,8 @@ hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
 wasm_simd128.h
 -
+riscv_vector.h
+-
 emmintrin.h
 -
 Intrin.h
@@ -1191,10 +1205,14 @@ arm_neon.h
 -
 altivec.h
 -
+immintrin.h
+-
 
 /usr/local/include/opencv4/opencv2/core/cv_cpu_helper.h
 
 /usr/local/include/opencv4/opencv2/core/cvdef.h
+opencv2/core/version.hpp
+/usr/local/include/opencv4/opencv2/core/opencv2/core/version.hpp
 cvconfig.h
 /usr/local/include/opencv4/opencv2/core/cvconfig.h
 limits
@@ -1387,8 +1405,6 @@ opencv2/core/utils/tls.hpp
 -
 
 /usr/local/include/opencv4/opencv2/core/utils/tls.hpp
-opencv2/core/utility.hpp
--
 
 /usr/local/include/opencv4/opencv2/core/version.hpp
 
@@ -1501,8 +1517,6 @@ typeinfo
 /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
 sstream
 -
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 ground_truth.h
@@ -1525,8 +1539,6 @@ logger.h
 /usr/local/include/opencv4/opencv2/flann/logger.h
 
 /usr/local/include/opencv4/opencv2/flann/composite_index.h
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 kdtree_index.h
@@ -1647,8 +1659,6 @@ map
 -
 cstring
 -
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 dynamic_bitset.h
@@ -1673,8 +1683,6 @@ map
 -
 cstring
 -
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 matrix.h
@@ -1721,8 +1729,6 @@ logger.h
 /usr/local/include/opencv4/opencv2/flann/logger.h
 
 /usr/local/include/opencv4/opencv2/flann/linear_index.h
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 
@@ -1743,8 +1749,6 @@ map
 -
 vector
 -
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 nn_index.h
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
 matrix.h
@@ -1787,8 +1791,6 @@ matrix.h
 /usr/local/include/opencv4/opencv2/flann/matrix.h
 stdio.h
 -
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 
 /usr/local/include/opencv4/opencv2/flann/miniflann.hpp
 opencv2/core.hpp
@@ -1797,8 +1799,6 @@ opencv2/flann/defines.h
 /usr/local/include/opencv4/opencv2/flann/opencv2/flann/defines.h
 
 /usr/local/include/opencv4/opencv2/flann/nn_index.h
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 matrix.h
 /usr/local/include/opencv4/opencv2/flann/matrix.h
 result_set.h
@@ -1823,8 +1823,6 @@ cstdlib
 -
 vector
 -
-general.h
-/usr/local/include/opencv4/opencv2/flann/general.h
 
 /usr/local/include/opencv4/opencv2/flann/result_set.h
 algorithm
@@ -1879,6 +1877,12 @@ opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+./imgproc/segmentation.hpp
+/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
+
+/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
+opencv2/imgproc.hpp
+/usr/local/include/opencv4/opencv2/imgproc/opencv2/imgproc.hpp
 
 /usr/local/include/opencv4/opencv2/ml.hpp
 opencv2/core.hpp

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/finley/Desktop/XX/learnslam/ch9/bundle_adjustment_g2o.cpp
+/home/finley/CODE/learnslam/ch9/bundle_adjustment_g2o.cpp
 g2o/core/base_vertex.h
 -
 g2o/core/base_binary_edge.h
@@ -22,9 +22,9 @@ g2o/core/robust_kernel_impl.h
 iostream
 -
 common.h
-/home/finley/Desktop/XX/learnslam/ch9/common.h
+/home/finley/CODE/learnslam/ch9/common.h
 sophus/se3.hpp
-/home/finley/Desktop/XX/learnslam/ch9/sophus/se3.hpp
+/home/finley/CODE/learnslam/ch9/sophus/se3.hpp
 
-/home/finley/Desktop/XX/learnslam/ch9/common.h
+/home/finley/CODE/learnslam/ch9/common.h
 

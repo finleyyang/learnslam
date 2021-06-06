@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/useSophus.dir/useSophus.cpp.o  -o useSophus 
+/usr/bin/c++ -g -rdynamic CMakeFiles/useSophus.dir/useSophus.cpp.o -o useSophus  /usr/local/lib/libfmt.a 

@@ -25,7 +25,9 @@ public:
                  const double translation_sigma,
                  const double point_sigma);
 
-    int camera_block_size() const { return use_quaternions_ ? 10 : 9; }
+    int camera_block_size() const {return use_quaternions_ ? 10 : 9;
+        // 如果是真的话，就是返回前面的数值，如果不是真的话就返回后面的数值
+        }
 
     int point_block_size() const { return 3; }
 

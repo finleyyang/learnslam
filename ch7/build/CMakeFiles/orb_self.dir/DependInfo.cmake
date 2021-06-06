@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/finley/Desktop/XX/learnslam/ch7/orb_self.cpp" "/home/finley/Desktop/XX/learnslam/ch7/build/CMakeFiles/orb_self.dir/orb_self.cpp.o"
+  "/home/finley/CODE/learnslam/ch7/orb_self.cpp" "/home/finley/CODE/learnslam/ch7/build/CMakeFiles/orb_self.dir/orb_self.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
-  "/usr/include/opencv"
+  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.

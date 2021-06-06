@@ -65,8 +65,12 @@ public:
     Vector2d project(const Vector3d &point) {
         Vector3d pc = _estimate.rotation * point + _estimate.translation;
         pc = -pc / pc[2];
+        //转换成极坐标形式（r， tha）
+        //r2 = x^2 + y^2
         double r2 = pc.squaredNorm();
         double distortion = 1.0 + r2 * (_estimate.k1 + _estimate.k2 * r2);
+        //distortion = x(or y)(1 + k1*r^2 + k2*r^4)
+        //这里把想x（or y）放在下面乘了
         return Vector2d(_estimate.focal * distortion * pc[0],
                         _estimate.focal * distortion * pc[1]);
     }
@@ -154,6 +158,7 @@ void SolveBA(BALProblem &bal_problem) {
     // vertex
     vector<VertexPoseAndIntrinsics *> vertex_pose_intrinsics;
     vector<VertexPoint *> vertex_points;
+    //相机的位置点
     for (int i = 0; i < bal_problem.num_cameras(); ++i) {
         VertexPoseAndIntrinsics *v = new VertexPoseAndIntrinsics();
         double *camera = cameras + camera_block_size * i;
@@ -162,6 +167,7 @@ void SolveBA(BALProblem &bal_problem) {
         optimizer.addVertex(v);
         vertex_pose_intrinsics.push_back(v);
     }
+    //观察的位置点
     for (int i = 0; i < bal_problem.num_points(); ++i) {
         VertexPoint *v = new VertexPoint();
         double *point = points + point_block_size * i;

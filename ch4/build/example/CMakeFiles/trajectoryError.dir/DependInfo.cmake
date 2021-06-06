@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/finley/Desktop/XX/learnslam/ch4/example/trajectoryError.cpp" "/home/finley/Desktop/XX/learnslam/ch4/build/example/CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o"
+  "/home/finley/CODE/learnslam/ch4/example/trajectoryError.cpp" "/home/finley/CODE/learnslam/ch4/build/example/CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/finley/Desktop/XX/learnslam/ch5/stereo/stereoVision.cpp" "/home/finley/Desktop/XX/learnslam/ch5/build/stereo/CMakeFiles/stereoVision.dir/stereoVision.cpp.o"
+  "/home/finley/CODE/learnslam/ch5/stereo/stereoVision.cpp" "/home/finley/CODE/learnslam/ch5/build/stereo/CMakeFiles/stereoVision.dir/stereoVision.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -5,265 +5,259 @@
 		<Option title="bundle_adjustment"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Ceres\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\glog\;CMake Files\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\eigen3\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Ceres\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bal_common">
-				<Option output="/home/finley/Desktop/XX/learnslam/ch9/build/libbal_common.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option output="/home/finley/CODE/learnslam/ch9/build/libbal_common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/finley/Desktop/XX/learnslam/ch9"/>
+					<Add directory="/home/finley/CODE/learnslam/ch9"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bal_common"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bal_common"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bal_common/fast">
-				<Option output="/home/finley/Desktop/XX/learnslam/ch9/build/libbal_common.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option output="/home/finley/CODE/learnslam/ch9/build/libbal_common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/finley/Desktop/XX/learnslam/ch9"/>
+					<Add directory="/home/finley/CODE/learnslam/ch9"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bal_common/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bal_common/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bundle_adjustment_g2o">
-				<Option output="/home/finley/Desktop/XX/learnslam/ch9/build/bundle_adjustment_g2o" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option output="/home/finley/CODE/learnslam/ch9/build/bundle_adjustment_g2o" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/finley/Desktop/XX/learnslam/ch9"/>
+					<Add directory="/home/finley/CODE/learnslam/ch9"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_g2o"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_g2o"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bundle_adjustment_g2o/fast">
-				<Option output="/home/finley/Desktop/XX/learnslam/ch9/build/bundle_adjustment_g2o" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option output="/home/finley/CODE/learnslam/ch9/build/bundle_adjustment_g2o" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/finley/Desktop/XX/learnslam/ch9"/>
+					<Add directory="/home/finley/CODE/learnslam/ch9"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_g2o/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_g2o/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bundle_adjustment_ceres">
-				<Option output="/home/finley/Desktop/XX/learnslam/ch9/build/bundle_adjustment_ceres" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option output="/home/finley/CODE/learnslam/ch9/build/bundle_adjustment_ceres" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
-					<Add directory="/home/finley/Desktop/XX/learnslam/ch9"/>
+					<Add option="-DCERES_EXPORT_INTERNAL_SYMBOLS"/>
+					<Add directory="/home/finley/CODE/learnslam/ch9"/>
 					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_ceres"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_ceres"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bundle_adjustment_ceres/fast">
-				<Option output="/home/finley/Desktop/XX/learnslam/ch9/build/bundle_adjustment_ceres" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/Desktop/XX/learnslam/ch9/build"/>
+				<Option output="/home/finley/CODE/learnslam/ch9/build/bundle_adjustment_ceres" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/learnslam/ch9/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
-					<Add directory="/home/finley/Desktop/XX/learnslam/ch9"/>
+					<Add option="-DCERES_EXPORT_INTERNAL_SYMBOLS"/>
+					<Add directory="/home/finley/CODE/learnslam/ch9"/>
 					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_ceres/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/finley/Desktop/XX/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 bundle_adjustment_ceres/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/finley/CODE/learnslam/ch9/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/bundle_adjustment_ceres.cpp">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/bundle_adjustment_ceres.cpp">
 			<Option target="bundle_adjustment_ceres"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/bundle_adjustment_g2o.cpp">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/bundle_adjustment_g2o.cpp">
 			<Option target="bundle_adjustment_g2o"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/common.cpp">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/common.cpp">
 			<Option target="bal_common"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/common.h">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/common.h">
 			<Option target="bal_common"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/CMakeLists.txt">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/cmake/FindCSparse.cmake">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/cmake/FindCSparse.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/cmake/FindEigen3.cmake">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/cmake/FindEigen3.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/cmake/FindG2O.cmake">
+		<Unit filename="/home/finley/CODE/learnslam/ch9/cmake/FindG2O.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/Ceres/CeresConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/Ceres/CeresConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/Ceres/CeresTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/Ceres/CeresTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/Ceres/CeresTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/Ceres/CeresTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/glog/glog-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\glog\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/Ceres/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/glog/glog-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\glog\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/fmt/fmt-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/glog/glog-modules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\glog\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/fmt/fmt-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/glog/glog-targets-noconfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\glog\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/fmt/fmt-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/lib/cmake/glog/glog-targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\glog\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/lib/cmake/fmt/fmt-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
 		</Unit>
-		<Unit filename="/home/finley/Desktop/XX/learnslam/ch9/../../../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		<Unit filename="/home/finley/CODE/learnslam/ch9/../../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
