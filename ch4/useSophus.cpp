@@ -15,6 +15,17 @@ int main(int argc, char **argv) {
   Matrix3d R = AngleAxisd(M_PI / 2, Vector3d(0, 0, 1)).toRotationMatrix();
   // 或者四元数
   cout << "旋转矩阵：\n"<< R.matrix()<< endl;
+  Eigen::AngleAxisd rotation_vector2(R);
+  cout << "旋转向量：" <<endl;
+  cout << "旋转轴：" <<endl;
+  cout << rotation_vector2.axis().transpose()<<endl;
+  cout << "旋转向量："<<endl;
+  cout << rotation_vector2.angle()<<endl;
+  cout << "旋转向量：\n"<<(rotation_vector2.axis() *  rotation_vector2.angle()).transpose()<<endl;
+  //在这里旋转向量等于李代数
+  //so3的物理意义就是旋转向量
+  //都是由罗德里格斯公式构成的
+  //R=cos(theta)I+(1-cos(theta))nn + sin(theta)n
   Quaterniond q(R);
   Sophus::SO3d SO3_R(R);              // Sophus::SO3d可以直接从旋转矩阵构造
   Sophus::SO3d SO3_q(q);              // 也可以通过四元数构造
