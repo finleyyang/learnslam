@@ -12,9 +12,16 @@ using namespace Eigen;
 int main(int argc, char **argv) {
 
   // 沿Z轴转90度的旋转矩阵
-  Matrix3d R = AngleAxisd(M_PI / 2, Vector3d(0, 0, 1)).toRotationMatrix();
+  Matrix3d R = AngleAxisd(M_PI / 2, Vector3d(0, 1, 1)).toRotationMatrix();
   // 或者四元数
   cout << "旋转矩阵：\n"<< R.matrix()<< endl;
+  //这里R不是旋转矩阵
+  cout << "R不是旋转矩阵原因是R*Rt：\n"<<R*R.transpose()<<endl;
+  Quaterniond q(R);
+  q.normalize();
+  //四元数需要进行归一化处理
+  cout << "R通过四元数进行归一化处理后是旋转矩阵原因是R*Rt：\n"<<q.toRotationMatrix()*q.toRotationMatrix().transpose()<<endl;
+  R = q.toRotationMatrix();
   Eigen::AngleAxisd rotation_vector2(R);
   cout << "旋转向量：" <<endl;
   cout << "旋转轴：" <<endl;
@@ -26,8 +33,8 @@ int main(int argc, char **argv) {
   //so3的物理意义就是旋转向量
   //都是由罗德里格斯公式构成的
   //R=cos(theta)I+(1-cos(theta))nn + sin(theta)n
-  Quaterniond q(R);
-  Sophus::SO3d SO3_R(R);              // Sophus::SO3d可以直接从旋转矩阵构造
+
+  Sophus::SO3d SO3_R(q.toRotationMatrix());              // Sophus::SO3d可以直接从旋转矩阵构造
   Sophus::SO3d SO3_q(q);              // 也可以通过四元数构造
   // 二者是等价的
   cout << "SO(3) from matrix:\n" << SO3_R.matrix() << endl;
@@ -50,7 +57,7 @@ int main(int argc, char **argv) {
   cout << "*******************************" << endl;
   // 对SE(3)操作大同小异
   Vector3d t(1, 0, 0);           // 沿X轴平移1
-  Sophus::SE3d SE3_Rt(R, t);           // 从R,t构造SE(3)
+  Sophus::SE3d SE3_Rt(q.toRotationMatrix(), t);           // 从R,t构造SE(3)
   Sophus::SE3d SE3_qt(q, t);            // 从q,t构造SE(3)
   cout << "SE3 from R,t= \n" << SE3_Rt.matrix() << endl;
   cout << "SE3 from q,t= \n" << SE3_qt.matrix() << endl;
@@ -73,7 +80,7 @@ int main(int argc, char **argv) {
   a_test << 1, 2, 3;
   cout << "a_test = "<<a_test.transpose()<<endl;
   cout <<  (SE3_Rt * a_test).transpose() << endl;
-  cout << q.toRotationMatrix()*a_test +t <<endl;
+  cout <<  (q.toRotationMatrix()*a_test +t).transpose() <<endl;
   cout << "SE3 updated = " << endl << SE3_updated.matrix() << endl;
 
   return 0;
