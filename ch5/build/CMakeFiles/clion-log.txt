@@ -1,4 +1,4 @@
-/home/finley/clion-2021.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/finley/CODE/learnslam/ch5
+/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/finley/CODE/learnslam/ch5
 CMake Warning (dev) in CMakeLists.txt:
   No project() command is present.  The top-level CMakeLists.txt file must
   contain a literal, direct call to the project() command.  Add a line of
@@ -12,15 +12,6 @@ CMake Warning (dev) in CMakeLists.txt:
   line.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 2.8.12 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- Found OpenCV: /usr/local (found suitable version "4.5.2", minimum required is "4") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/finley/CODE/learnslam/ch5/build

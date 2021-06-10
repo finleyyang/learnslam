@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\;CMake Files\imageBasics\;CMake Files\stereo\;CMake Files\rgbd\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\imageBasics\;CMake Files\stereo\;CMake Files\rgbd\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/finley/CODE/learnslam/ch5/build"/>
@@ -245,18 +245,6 @@
 		<Unit filename="/home/finley/CODE/learnslam/ch5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
-		</Unit>
-		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
-		</Unit>
-		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
-		</Unit>
-		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
-		</Unit>
 		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
@@ -292,6 +280,15 @@
 		</Unit>
 		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/lib/cmake/fmt/fmt-targets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\fmt\"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/learnslam/ch5/../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
 		<Unit filename="/home/finley/CODE/learnslam/ch5/imageBasics/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\imageBasics\"/>

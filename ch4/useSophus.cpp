@@ -68,6 +68,12 @@ int main(int argc, char **argv) {
   update_se3.setZero();
   update_se3(0, 0) = 1e-4;
   Sophus::SE3d SE3_updated = Sophus::SE3d::exp(update_se3) * SE3_Rt;
+  Vector3d a_test ;
+  //SE（3）可以直接与坐标相乘得到转换之后的坐标
+  a_test << 1, 2, 3;
+  cout << "a_test = "<<a_test.transpose()<<endl;
+  cout <<  (SE3_Rt * a_test).transpose() << endl;
+  cout << q.toRotationMatrix()*a_test +t <<endl;
   cout << "SE3 updated = " << endl << SE3_updated.matrix() << endl;
 
   return 0;
