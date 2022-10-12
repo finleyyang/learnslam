@@ -69,7 +69,6 @@ public:
         double r2 = pc.squaredNorm();
         double distortion = 1.0 + r2 * (_estimate.k1 + _estimate.k2 * r2);
         //distortion = x(or y)(1 + k1*r^2 + k2*r^4)
-        //这里把想x（or y）放在下面乘了
         return Vector2d(_estimate.focal * distortion * pc[0],
                         _estimate.focal * distortion * pc[1]);
     }
