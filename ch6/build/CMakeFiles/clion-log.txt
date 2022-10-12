@@ -1,15 +1,37 @@
-/home/finley/clion-2021.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/finley/CODE/learnslam/ch6
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 2.8.12 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/bin/make -DCMAKE_C_COMPILER=/bin/cc -DCMAKE_CXX_COMPILER=/bin/c++ -G "CodeBlocks - Unix Makefiles" -S /home/finley/CODE/learnslam/ch6 -B /home/finley/CODE/learnslam/ch6/build
+-- Found AMD headers in: /usr/include/suitesparse
+-- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+-- Found CAMD headers in: /usr/include/suitesparse
+-- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+-- Found CCOLAMD headers in: /usr/include/suitesparse
+-- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+-- Found CHOLMOD headers in: /usr/include/suitesparse
+-- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+-- Found COLAMD headers in: /usr/include/suitesparse
+-- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+-- Found SPQR headers in: /usr/include/suitesparse
+-- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+-- Found Config headers in: /usr/include/suitesparse
+-- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+-- Found Intel Thread Building Blocks (TBB) library (2020.1 / 11101) include location: . Assuming SuiteSparseQR was compiled with TBB.
+-- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+-- Found required Ceres dependency: Eigen version 3.3.7 in /usr/lib/cmake/eigen3
 -- Found required Ceres dependency: glog
--- Found Ceres version: 2.0.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SchurSpecializations, Multithreading]
--- Configuring done
--- Generating done
--- Build files have been written to: /home/finley/CODE/learnslam/ch6/build
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 2.2.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations, Multithreading]
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+G2O_CORE_LIBRARY
+    linked by target "g2oCurveFitting" in directory /home/finley/CODE/learnslam/ch6
+G2O_INCLUDE_DIRS
+   used as include directory in directory /home/finley/CODE/learnslam/ch6
+   used as include directory in directory /home/finley/CODE/learnslam/ch6
+   used as include directory in directory /home/finley/CODE/learnslam/ch6
+   used as include directory in directory /home/finley/CODE/learnslam/ch6
+   used as include directory in directory /home/finley/CODE/learnslam/ch6
+G2O_STUFF_LIBRARY
+    linked by target "g2oCurveFitting" in directory /home/finley/CODE/learnslam/ch6
+
+-- Configuring incomplete, errors occurred!
+See also "/home/finley/CODE/learnslam/ch6/build/CMakeFiles/CMakeOutput.log".
+See also "/home/finley/CODE/learnslam/ch6/build/CMakeFiles/CMakeError.log".

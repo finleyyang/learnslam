@@ -1,11 +1,16 @@
-/home/finley/clion-2021.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/finley/CODE/learnslam/ch7
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 2.8.12 will be removed from a future version of
-  CMake.
+/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/bin/make -DCMAKE_C_COMPILER=/bin/cc -DCMAKE_CXX_COMPILER=/bin/c++ -G "CodeBlocks - Unix Makefiles" -S /home/finley/CODE/learnslam/ch7 -B /home/finley/CODE/learnslam/ch7/build
+CMake Warning (dev) at CMakeLists.txt:44 (target_link_libraries):
+  Cannot specify link libraries for target "fmt" which is not built by this
+  project.
 
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
+  CMake does not support this but it used to work accidentally and is being
+  allowed for compatibility.
 
+  Policy CMP0016 is not set: target_link_libraries() reports error if its
+  only argument is not a target.  Run "cmake --help-policy CMP0016" for
+  policy details.  Use the cmake_policy command to set the policy and
+  suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Configuring done
 -- Generating done

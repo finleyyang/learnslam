@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bundle_adjustment_g2o.dir/bundle_adjustment_g2o.cpp.o"
+  "CMakeFiles/bundle_adjustment_g2o.dir/bundle_adjustment_g2o.cpp.o.d"
   "bundle_adjustment_g2o"
   "bundle_adjustment_g2o.pdb"
 )

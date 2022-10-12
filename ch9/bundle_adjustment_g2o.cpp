@@ -65,7 +65,6 @@ public:
     Vector2d project(const Vector3d &point) {
         Vector3d pc = _estimate.rotation * point + _estimate.translation;
         pc = -pc / pc[2];
-        //转换成极坐标形式（r， tha）
         //r2 = x^2 + y^2
         double r2 = pc.squaredNorm();
         double distortion = 1.0 + r2 * (_estimate.k1 + _estimate.k2 * r2);
